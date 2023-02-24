@@ -1,6 +1,6 @@
 import tkinter as tk
-from Services.ProcessTrainText import ProcessTrainText
-from Enums.SortType import SortType
+from src.Services.ProcessTrainText import ProcessTrainText
+from src.Enums.SortType import SortType
 
 
 def ShowMainView():

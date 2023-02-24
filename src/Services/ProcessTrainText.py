@@ -1,8 +1,8 @@
-from Plots.plotMatchTrain import PlotMatchTrain
-from Classes.Aception import Aception
-from Services.DatabaseToAceptions import DBtoAceptions
-from Classes.TextTrainMatch import TrainTextMatch
-from Enums.SortType import SortType
+from src.Plots.plotMatchTrain import PlotMatchTrain
+from src.Classes.Aception import Aception
+from src.Services.DatabaseToAceptions import DBtoAceptions
+from src.Classes.TextTrainMatch import TrainTextMatch
+from src.Enums.SortType import SortType
 import tkinter as tk
 
 

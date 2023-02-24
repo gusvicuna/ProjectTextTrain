@@ -1,5 +1,5 @@
-from Classes.Aception import Aception
-from DataBase.database import GetDatabase
+from src.Classes.Aception import Aception
+from src.DataBase.database import GetDatabase
 
 
 def DBtoAceptions():

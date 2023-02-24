@@ -1,5 +1,5 @@
-from Classes.Aception import Aception
-from Classes.MatchData import MatchData
+from src.Classes.Aception import Aception
+from src.Classes.MatchData import MatchData
 
 
 class TrainTextMatch:

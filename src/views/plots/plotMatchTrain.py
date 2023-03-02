@@ -5,7 +5,7 @@ from matplotlib.backends.backend_tkagg import (
     NavigationToolbar2Tk)
 
 
-def PlotMatchTrain(listOfTrainTextMatch, window) -> None:
+def PlotMatchTrain(listOfTrainTextMatch, frame) -> None:
     # the figure that will contain the plot
     fig = Figure(figsize=(5, 5), dpi=100)
 
@@ -51,14 +51,14 @@ def PlotMatchTrain(listOfTrainTextMatch, window) -> None:
     # creating the Tkinter canvas
     # containing the Matplotlib figure
     canvas = FigureCanvasTkAgg(fig,
-                               master=window)
+                               master=frame)
     canvas.draw()
     # placing the canvas on the Tkinter window
     canvas.get_tk_widget().pack()
 
     # creating the Matplotlib toolbar
     toolbar = NavigationToolbar2Tk(canvas,
-                                   window)
+                                   frame)
     toolbar.update()
 
     # placing the toolbar on the Tkinter window

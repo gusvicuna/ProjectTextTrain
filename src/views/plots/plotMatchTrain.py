@@ -62,4 +62,4 @@ def PlotMatchTrain(listOfTrainTextMatch, frame) -> None:
     toolbar.update()
 
     # placing the toolbar on the Tkinter window
-    canvas.get_tk_widget().pack()
+    canvas.get_tk_widget().place(x=0, y=0)

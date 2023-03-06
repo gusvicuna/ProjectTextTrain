@@ -1,12 +1,19 @@
 import tkinter as tk
-from src.services.GetAceptionsInOrder import GetAceptionsInOrder
+from src.services.ProcessTrainText import (ToListOfTrainTextMatchs,
+                                           OrderListOfTrainTextMatches)
 from src.enums.sortType import SortType
 from src.views.plotpage import PlotPage
 from src.views.gridpage import GridPage
-from src.services.DatabaseToAceptions import DBtoDrivers
+from src.services.DatabaseToAceptions import DBtoAceptions
 
 
 class MainView(tk.Frame):
+
+    ordered_train_text_matches = None
+    train_text = None
+    has_been_plot_reseted = False
+    has_been_grid_reset = False
+
     def __init__(self, *args, **kwargs):
         tk.Frame.__init__(self, *args, **kwargs)
 
@@ -50,38 +57,25 @@ class MainView(tk.Frame):
             variable=is_reversed_tk)
         is_reversed_checkbox.grid(column=1, row=0)
 
-        match_button = tk.Button(master=input_frame, text="Ejecutar")
-        match_button.pack(side="top", fill="x")
+        execute_button = tk.Button(master=input_frame, text="Ejecutar")
+        execute_button.pack(side="top", fill="x")
 
-        # Pages
-        plot_page = PlotPage(self)
-        grid_page = GridPage(self)
+        self.feedback_frame = tk.Frame(master=input_frame, height=100)
+        self.feedback_frame.pack(side="top", fill="x")
 
-        button_frame = tk.Frame(self)
-        button_frame.pack(side="top", fill="x")
-        page_container = tk.Frame(master=self)
-        page_container.pack(side="top", fill="both", expand=True)
+        self.feedback_label = tk.Label(master=self.feedback_frame,
+                                       text="", height=50)
+        self.feedback_label.place(width=0, height=0)
 
-        plot_page.place(in_=page_container, x=0, y=0, relheight=1, relwidth=1)
-        grid_page.place(in_=page_container, x=0, y=0, relheight=1, relwidth=1)
+        def ResetTrainText(event):
+            self.has_been_grid_reset = True
+            self.has_been_plot_reseted = True
 
-        plot_page_button = tk.Button(
-            button_frame,
-            text="Mostrar Gráfico",
-            command=plot_page.show)
-        grid_page_button = tk.Button(
-            button_frame,
-            text="Mostrar Cuadrícula",
-            command=grid_page.show
-        )
+            self.feedback_label = tk.Label(master=self.feedback_frame,
+                                           text="Cargando...", height=50)
+            self.feedback_label.place(width=0, height=0)
 
-        plot_page.show()
-
-        plot_page_button.pack(side="left")
-        grid_page_button.pack(side="left")
-
-        def handle_match_button_click(event):
-            train_text = entry.get()
+            self.train_text = entry.get()
 
             order = 1
             if order_tk.get() == 1:
@@ -95,15 +89,59 @@ class MainView(tk.Frame):
             else:
                 is_reversed = True
 
-            drivers = DBtoDrivers()
+            aceptions = DBtoAceptions()
 
-            ordered_aceptions = GetAceptionsInOrder(
-                drivers,
-                trainText=train_text,
+            train_text_matches = ToListOfTrainTextMatchs(
+                aceptions,
+                trainText=self.train_text)
+            self.ordered_train_text_matches = OrderListOfTrainTextMatches(
+                train_text_matches,
                 order=order,
                 isOrderReversed=is_reversed)
 
-            plot_page.ShowResults(ordered_aceptions)
-            grid_page.LoadMatchTrain(drivers)
+            self.feedback_label = tk.Label(master=self.feedback_frame,
+                                           text="Cargado ☻", height=50)
+            self.feedback_label.place(width=0, height=0)
 
-        match_button.bind("<Button-1>", handle_match_button_click)
+        execute_button.bind("<Button-1>", ResetTrainText)
+
+        # Pages
+        plot_page = PlotPage(self)
+        grid_page = GridPage(self)
+
+        button_frame = tk.Frame(self)
+        button_frame.pack(side="top", fill="x")
+        page_container = tk.Frame(master=self)
+        page_container.pack(side="top", fill="both", expand=True)
+
+        plot_page.place(in_=page_container, x=0, y=0, relheight=1, relwidth=1)
+        grid_page.place(in_=page_container, x=0, y=0, relheight=1, relwidth=1)
+
+        def ShowPlotResults(event):
+            if self.has_been_plot_reseted:
+                self.has_been_plot_reseted = False
+                plot_page.ShowResults(self.ordered_train_text_matches)
+            plot_page.show()
+
+        def ShowGridResults(event):
+            if self.has_been_grid_reset:
+                self.has_been_grid_reset = False
+                grid_page.LoadMatchTrain(trainText=self.train_text)
+            grid_page.show()
+
+        plot_page_button = tk.Button(
+            button_frame,
+            text="Mostrar Gráfico")
+        grid_page_button = tk.Button(
+            button_frame,
+            text="Mostrar Cuadrícula",
+            command=grid_page.show
+        )
+
+        plot_page.show()
+
+        plot_page_button.pack(side="left")
+        grid_page_button.pack(side="left")
+
+        plot_page_button.bind("<Button-1>", ShowPlotResults)
+        grid_page_button.bind("<Button-1>", ShowGridResults)

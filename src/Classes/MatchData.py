@@ -16,7 +16,8 @@ class MatchData:
         self.matchTrainText = matchTrainText
 
     def __str__(self) -> str:
-        return f"100:{self.matchWords100}75:{self.matchWords75} percent:{self.matchedCharsPercent} totalchars:{self.totalChars}"
+        return f"100:{self.matchWords100}75:{self.matchWords75}" +\
+            f" percent:{self.matchedCharsPercent} totalchars:{self.totalChars}"
 
     def HasGreaterThan75PercentMatchedWords(self) -> bool:
         return self.matchedWordsPercent >= 75

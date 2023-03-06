@@ -1,0 +1,932 @@
+{
+    "AGILIDAD":
+    {
+        "name": "Agilidad",
+        "components":
+        [
+            {
+                "name": "Atención",
+                "code_words":
+                [
+                    "atención"
+                ],
+                "phrases":
+                [
+                    "ágil", "ahorras tiempo", "al momento", "a la brevedad",
+                    "diligente", "disponibles en poco tiempo",
+                    "disponibles en breve", "en tiempo reducido",
+                    "En el/Al Momento", "Inmediata", "Instantánea", "Dinámica",
+                    "Oportuna", "Pronta", "prontitud", "Rápida",
+                    "Rápido tiempo de espera", "Sin demora/Con poca espera",
+                    "Sin filas largas", "Sin tiempo de espera"
+                ]
+            },
+            {
+                "name": "Solución de problemas",
+                "code_words":
+                [
+                    "Cambios", "Devoluciones"
+                ],
+                "phrases":
+                [
+                    "No se demoran", "Poca espera", "Rápido", "Sin espera",
+                    "Sin pérdida de tiempo"
+                ]
+            },
+            {
+                "name": "Plataformas digitales",
+                "code_words":
+                [
+                    "plataforma digital", "infrastructura digital",
+                    "infrastructura virtual", "web", "app"
+                ],
+                "phrases":
+                [
+                    "Acceso rápido", "Rapidez para efecturar trámites",
+                    "Despliega información rápida", "Rápida"
+                ]
+            },
+            {
+                "name": "Gestión",
+                "code_words": 
+                [
+                    "respuesta", "resultado", "ejecucion", "asesoria", "entrega", "curse", "deposito"
+                ],
+                "phrases":
+                [
+                    "a la brevedad", "inmediata", "a tiempo", "sin demora", "antes de lo esperado",
+                    "corto plazo", "excelente tiempo de respuesta", "pronta", "agil en resolver requerimiento"
+                ]
+            },
+            {
+                "name": "Proceso",
+                "code_words":
+                [
+                    "servicio", "operación"
+                ],
+                "phrases":
+                [
+                    "con celeridad", "agil", "con velocidad"
+                ]
+            }
+            
+        ]
+    },
+    "HONESTIDAD":
+    {
+        "name": "Honestidad",
+        "components":
+        [
+            {
+                "name": "Honestidad",
+                "code_words": [""],
+                "phrases":
+                [
+                    "dicen la verdad", "honestos", "honradez",
+                    "información honesta", "información no distorsionada",
+                    "no inducen", "no omiten información", "no roban",
+                    "probidad", "sinceros"
+                ]
+            }
+        ]
+    },
+    "SUCURSALES":
+    {
+        "name": "Sucursales",
+        "components":[
+            {
+                "name": "Accesos",
+                "code_words": [""],
+                "phrases":
+                [
+                    "accesible", "accesibilidad", "bien ubicadas",
+                    "cerca", "están cerca de mi oficina", "fácil acceso",
+                    "hay una donde vivo", "quedan cerca"
+                ]
+            },
+            {
+                "name": "Lugar",
+                "code_words": ["lugar", "ambiente"],
+                "phrases":
+                [
+                    "acogedor", "adecuado", "agradable", "buenas tiendas",
+                    "grato ambiente", "lindo", "lugar agradable", "no saturado",
+                    "silencioso", "sin aglomeraciones", "sin que molesten",
+                    "tranquilo", "aire acondicionado",
+                    "buen ambiente para estudiar", "calefacción",
+                    "dependencias cómodas para aprender",
+                    "dependencias adecuadas para aprender", "sin ruido"
+                ]
+            },
+            {
+                "name": "Edificio",
+                "code_words": ["construcción", "edificio"],
+                "phrases":
+                [
+                    "buen lugar", "buena infraestructura",
+                    "se expresa un reconocimiento"
+                ]
+            },
+            {
+                "name": "Orden y Limpieza",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "ordenadas", "limpio", "despejado"
+                ]
+            },
+            {
+                "name": "N° de Sucursales",
+                "code_words":
+                [
+                    "sucursal"
+                ],
+                "phrases":
+                [
+                    "en todas partes", "muchas"
+                ]
+            },
+            {
+                "name": "Baños",
+                "code_words":
+                [
+                    "baño"
+                ],
+                "phrases":
+                [
+                    "bueno", "suficientes"
+                ]
+            }
+        ]
+    },
+    "MEDIDAS SANITARIAS":
+    {
+        "name": "Medidas Sanitarias",
+        "components":
+        [
+            {
+                "name": "Prevención",
+                "code_words": [""],
+                "phrases":
+                [
+                    "tose en el antebrazo", "estornuda en un pañuelo",
+                    "tose en un pañuelo", "reemplazo de firma física",
+                    "mantiene distancia", "cuida su higiene con alcohol gel",
+                    "limpieza constante de superficies", "utiliza saludo verbal",
+                    "evita pagos en efectivo"
+                ]
+            }, 
+            {
+                "name": "Equipamiento",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "uso de guantes", "uso de mascarillas",
+                    "porta alcohol gel", "utiliza pos móvil"
+                ]
+            }
+        ]
+    },
+    "CONFIANZA":
+    {
+        "name": "Confianza",
+        "components":
+        [
+            {
+                "name": "Confianza",
+                "code_words": [""],
+                "phrases":
+                [
+                    "confiables", "cercanía con la empresa",
+                    "hacen sentir confianza", "dan confianza", "fiable",
+                    "me da confianza", "me da seguridad", "seguridad",
+                    "tranquilidad"
+                ]
+            }
+        ]
+    },
+    "PROFESIONALISMO":
+    {
+        "name": "Profesionalismo",
+        "components":
+        [
+            {
+                "name": "Seriedad",
+                "code_words": [""],
+                "phrases": ["serio"]
+            },
+            {
+                "name": "Profesionalismo",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "trayectoria"
+                ]
+            }
+        ]
+    },
+    "CONOCIMIENTO":
+    {
+        "name": "Conocimiento",
+        "components":
+        [
+            {
+                "name": "Asesora",
+                "code_words":
+                [
+                    "entrega", "guía", "asiste", "aconseja",
+                    "orienta", "ofrece", "sugiere", "direcciona"
+                ],
+                "phrases":
+                [
+                    "conocimiento", "información"
+                ]
+            },
+            {
+                "name": "Sabe de Terceros",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "conoce a mi cliente", "conoce a mis proveedores"
+                ]
+            },
+            {
+                "name": "Sabe de Mí",
+                "code_words":
+                [
+                    "sabe", "se alinea"
+                ],
+                "phrases":
+                [
+                    "mis inversiones",
+                    "mi cartera", "mi negocio", "mis necesidades"
+                ]
+            },
+            {
+                "name": "Capacitado",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "calificado", "competente", "competencias apropiadas",
+                    "con conocimiento", "conoce del tema", "con experiencia",
+                    "conocen productos", "demuestra conocimiento",
+                    "demuestra habilidades", "profesional",
+                    "dominio del negocio", "informado", "no titubea", "ordenado",
+                    "programado", "maneja la información", "preparado",
+                    "sabe a cabalidad", "sabe explicar", "sabe coordinarse",
+                    "tiene capacidad de ejecución"
+                ]
+            }
+        ]
+    },
+    "PROACTIVIDAD":
+    {
+        "name": "Proactividad",
+        "components":
+        [
+            {
+                "name": "Por iniciativa propia",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "se anticipan", "buscan alternativas",
+                    "comparan alternativas", "se contactan", "me informan",
+                    "me retroalimentan", "me avisan", "me alertan", "revisan",
+                    "dan seguimiento"
+                ]
+            }
+        ]
+    },
+    "CERCANÍA":
+    {
+        "name": "Cercanía",
+        "components":
+        [
+            {
+                "name": "Trato",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "atento", "cordial", "empático", "gentil",
+                    "amable", "amabilidad", "paciente", "positivo", "animado",
+                    "respetuoso", "cortés", "dispuesto", "simpático",
+                    "dulce", "educado", "amoroso", "servicial", "deferente",
+                    "con buena voluntad"
+                ]
+            },
+            {
+                "name": "Es Conocido",
+                "code_words":
+                [
+                    "agente", "ejecutivo", "asesor"
+                ],
+                "phrases":
+                [
+                    "lo ha visto",
+                    "se presentó", "tiene ejecutivo asignado", "conocido"
+                ]
+            },
+            {
+                "name": "Actitud",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "me toman en cuenta", "buscan la mejor alternativa",
+                    "buscan resolver", "pendientes de mí", "escuchan",
+                    "dedicados", "interÉs por el cliente", "se preocupan",
+                    "se comprometen", "se involucran", "me conocen",
+                    "apoyan", "ayudan", "asisten", "acogen", "cálido", "cercano",
+                    "con sentido de urgencia", "empático", "personalizan",
+                    "me preguntan si necesito algo", "me priorizan",
+                    "me hicieron un regalo", "frente a una urgencia ahÍ estÁn",
+                    "son considerados", "me defienden", "le importan mis asuntos",
+                    "sin peros", "me comprenden", "son mis amigos",
+                    "me hacen sentir cómodo", "se la juegan", "preocupacion"
+                ]
+            },
+            {
+                "name": "Continuidad del Personal",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "tienen asistente en caso de no estar",
+                    "sin rotaciÓn de personas",
+                    "no cambia ejecutivo", "no cambia sucursal"
+                ]
+            },
+            {
+                "name": "Vocación",
+                "code_words":
+                [
+                    "vocación"
+                ],
+                "phrases":
+                [
+                    ""
+                ]
+            }
+        ]
+    },
+    "EFECTIVIDAD COMUNICACIONAL":
+    {
+        "name": "Efectividad Comunicacional",
+        "components":
+        [
+            {
+                "name": "Logro Comunicacional",
+                "code_words":
+                [
+                    "comunicación"
+                ],
+                "phrases":
+                [
+                    "certera", "detallada", "completa", "explican bien",
+                    "sin error", "no distorsionada", "entendible", "clara",
+                    "explicada", "precisa", "respuesta concreta",
+                    "quedo bien informado", "adecuada", "asertiva", "completa",
+                    "excelente", "fácil", "consolidada", "buena", "actualizada",
+                    "nueva", "correcta"
+                ]
+            },
+            {
+                "name": "Comunicación en momento",
+                "code_words":
+                [
+                    "comunicar"
+                ],
+                "phrases":
+                [
+                    "cuando corresponde", "cuando es necesario"
+                ]
+            },
+            {
+                "name": "Canal Adecuado",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "mail", "sucursal teléfono", "web"
+                ]
+            },
+            {
+                "name": "Tasas",
+                "code_words":
+                [
+                    "tasas", "comisiones", "costos", "ofertas"
+                ],
+                "phrases":
+                [
+                    "accesible", "a la vista", "claros", "destacados",
+                    "en la página está la misma información", "fáciles de leer",
+                    "simples de leer", "visibles"
+                ]
+            }
+        ]
+    },
+    "FACILIDAD":
+    {
+        "name": "Facilidad",
+        "components":[
+            {
+                "name": "Responden a mi contacto",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "contestan", "devuelven", "envían", "responden siempre",
+                    "llamadas", "e-mail", "sms", "whatsapp"
+                ]
+            },
+            {
+                "name": "Cómodo",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "puedo usar whatsapp para operar",
+                    "no necesito estar presencialmente"
+                ]
+            },
+            {
+                "name": "Facilidad",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "simple", "amigable", "sin dificultad",
+                    "nos facilitan la operaciÓn", "clara", "sencilla",
+                    "se entiende", "fácil acceso", "sencillo en pocos pasos"
+                ]
+            },
+            {
+                "name": "Fluido",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "poco tramite", "fluidez en el proceso", "sin burocracia",
+                    "directo", "sin trabas", "la informaciÓn fluye", "expedito",
+                    "simple", "sin dificultad", "sin problema"
+                ]
+            },
+            {
+                "name": "Práctico",
+                "code_words":
+                [
+                    "práctico"
+                ],
+                "phrases":
+                [
+                    ""
+                ]
+            },
+            {
+                "name": "Está Presente / Persona Accesible",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "accesibles", "disponibles", "fÁcil acceso a personas",
+                    "esta comunicado", "hay comunicaciÓn", "no falta al trabajo",
+                    "contacto directo", "alta disponibilidad"
+                ]
+            }
+        ]
+    },
+    "PLATAFORMAS DIGITALES":
+    {
+        "name": "Plataformas Digitales",
+        "components":[
+            {
+                "name": "Uptime / Funcionalidad",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "funciona perfecto", "permanente", "sin problemas",
+                    "estabilidad de pagina", "no se cae", "prÁcticamente si fallas"
+                ]
+            },
+            {
+                "name": "Diseño y Funcionalidad",
+                "code_words":
+                [
+                    "diseño", "funcionalidad"
+                ],
+                "phrases":
+                [
+                    "moderna", "dinamica", "permite autoatenciÓn",
+                    "solicitar giros", "comunicarse", "hacer de todo",
+                    "da un buen servicio", "es buena", "eficiente",
+                    "cumple con todo"
+                ]
+            },
+            {
+                "name": "Herramientas de Transacción",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "hacer de todo", "herramientas de transacción múltiples",
+                    "moderna",  "whatsapp para hacer pedidos",
+                    "permite auto atención", "solicitar giros",
+                    "hacer transacciones a distancia",
+                    "tiene opciones de cambio de producto", "tomar decisiones"
+                ]
+            },
+            {
+                "name": "Informes Web/App",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "buenas gráficas de rentabilidad", "buenos informes",
+                    "información actualizada"
+                ]
+            },
+            {
+                "name": "Contenido Disponible",
+                "code_words":
+                [
+                    "contenido"
+                ],
+                "phrases":
+                [
+                    "mucha información", "información necesaria"
+                ]
+            }
+        ]
+    },
+    "VALORES":
+    {
+        "name": "Valores",
+        "components":[
+            {
+                "name": "Confidencialidad",
+                "code_words":
+                [
+                    "confidenciales"
+                ],
+                "phrases":
+                [
+                    ""
+                ]
+            },
+            {
+                "name": "Responsabilidad",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "asumen", "con el trabajo realizado", "responsable",
+                    "responsabilidad"
+                ]
+            },
+            {
+                "name": "Lealtad",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "leales"
+                ]
+            },
+            {
+                "name": "Plurarismo",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "no es racista", "no discrimina"
+                ]
+            }
+        ]
+    },
+    "CONDICIONES COMERCIALES":
+    {
+        "name": "Condiciones Comerciales",
+        "components":[
+            {
+                "name": "Precios",
+                "code_words":
+                [
+                    "valores", "costos", "cobros", "comisiones",
+                    "estabilidad de precios", "precios"
+                ],
+                "phrases":
+                [
+                    "bajos", "buenos", "adecuados", "bajos intereses",
+                    "sin costos de mantención", "buena relacion costo-beneficio"
+                ]
+            },
+            {
+                "name": "Tasas",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "convenientes", "competitivas", "no tan caro en intereses",
+                    "descuento de intereses", "intereses razonables"
+                ]
+            },
+            {
+                "name": "Precio de Mercado",
+                "code_words":
+                [
+                    "precio de mercado"
+                ],
+                "phrases":
+                [
+                    ""
+                ]
+            },
+            {
+                "name": "Condición / Propuesta Comercial",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "es una oportunidad", "tengo beneficios",
+                    "oportunidades de negocio"
+                ]
+            },
+            {
+                "name": "Crédito",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "linea sobregiro", "linea de crÉdito",
+                    "cupo tarjeta", "acceso a crÉditos de consumo"
+                ]
+            },
+            {
+                "name": "Ofertas",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "invitaciones a eventos", "ofertas con tarjeta", "regalos"
+                ]
+            },
+            {
+                "name": "Prima",
+                "code_words":
+                [
+                    "prima"
+                ],
+                "phrases":
+                [
+                    "económico"
+                ]
+            },
+            {
+                "name": "Productos",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "más cobertura", "promociones", "ahorro", "mejor plan"
+                ]
+            }
+        ]
+    },
+    "CUMPLIMIENTO":
+    {
+        "name": "Cumplimiento",
+        "components":[
+            {
+                "name": "De Requerimientos",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "es eficaz", "sin dificultad", "sin problema",
+                    "obtiene mejor opción", "eficiente", "soluciÓn concreta",
+                    "cumple", "realiza", "es resolutivo", "soluciona", "funciona",
+                    "obtiene", "satisface", "encuentra", "cambia", "consigue",
+                    "concreta", "logra", "se hace efectivo", "resulta",
+                    "con resoluciÓn", "llegan", "resulto bien", "sin contratiempo",
+                    "da respuesta", "respetan acuerdos", "acertados", "llaman",
+                    "cumple con todo", "entregan lo que requiero", "sin problemas",
+                    "sin contrariedades", "entrega precisa", "adecuadamente",
+                    "exactamente lo ofrecido", "acorde a lo pedido",
+                    "conforme con la compra",
+                    "todo ok", "todo bien", "lo que requiero", "buena opciÓn",
+                    "buena alternativa", "cobran lo que corresponde",
+                    "pagan lo que corresponde", "responde bien a las necesidades"
+                ]
+            },
+            {
+                "name": "De Tiempos",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "oportunamente", "dentro de los plazos",
+                    "tiempos comprometidos", "puntuales",
+                    "cobran a tiempo", "en tiempo adecuado", "rápida solución",
+                    "buenos tiempos de respuesta", "manejan los tiempos"
+                ]
+            },
+            {
+                "name": "De Expectativas",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "cumple expectativa", "cumplir sueño", "lo que esperaba",
+                    "tenían lo que buscaba", "tiene lo que necesito",
+                    "todo lo que necesito"
+                ]
+            },
+            {
+                "name": "De Soluciones",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "resuelve el problema", "elimina el error"
+                ]
+            },
+            {
+                "name": "De Ganancias",
+                "code_words":
+                [
+                    ""
+                ],
+                "phrases":
+                [
+                    "aumenta inversion", "aumenta fondos", "rentabilidad",
+                    "buenos resultados"
+                ]
+            }
+        ]
+    },
+    "LIKE":
+    {
+        "name": "Like",
+        "components":[
+            {
+                "name": "Colaborador",
+                "code_words":
+                [
+                    "colaborador"
+                ],
+                "phrases":
+                [
+                    "agrada", "agradece", "amor", "al punto", "atiende bien",
+                    "bien", "brillante", "buena atención", "casi perfecto",
+                    "de calidad", "de primera", "de primera calidad", "me gusta",
+                    "muy bien", "muy buena", "encantó", "espectacular",
+                    "es un pilar", "estoy en buenas manos", "excelente",
+                    "fabuloso", "felicidad", "felicito", "felicitaciones",
+                    "fenomenal", "genial", "entretenida", "grandiosa", "grata",
+                    "increíble", "lo encuentro un 7", "lo hace bien", "lo mejor",
+                    "llama su atención", "magnífica", "marca la diferencia",
+                    "no es la primera vez que compro con ella por su gestión",
+                    "ok", "quedé feliz", "recomiendo", "satisfecho",
+                    "me siento a gusto", "sin problemas", "sorprendente",
+                    "todo bien"
+                ]
+            },
+            {
+                "name": "Plataforma Digital",
+                "code_words":
+                [
+                    "plataforma digital"
+                ],
+                "phrases":
+                [
+                    "agrada", "al punto", "atiende bien", "buen servicio online",
+                    "conforme", "de calidad", "de primera", "me gusta", "muy bien",
+                    "muy bueno", "encantó", "espectacular", "excelente",
+                    "fabuloso", "felicito", "fenomenal", "Todo Bien",
+                    "hace la diferencia en el negocio", "Recomienda",
+                    "increíble", "Linda", "Lo Encuentra Un 7", "Notable", "OK",
+                    "Satisfecho"
+                ]
+            },
+            {
+                "name": "Banca Empresa",
+                "code_words":
+                [
+                    "banca empresa"
+                ],
+                "phrases":
+                [
+                    ""
+                ]
+            },
+            {
+                "name": "Riesgo",
+                "code_words":
+                [
+                    "riesgo"
+                ],
+                "phrases":
+                [
+                    ""
+                ]
+            }
+        ]
+    },
+    "UNIDAD TÁCTICA":
+    {
+        "name": "Unidad Táctica",
+        "components":[
+            {
+                "name": "UT Ejecutivo",
+                "code_words":["ejecutivo"],
+                "phrases":[""]
+            },
+            {
+                "name": "UT Plat. Digitales",
+                "code_words":
+                [
+                    "internet", "portal electrónico", "plataforma", "pagina", "sitio web", "app"
+                ],
+                "phrases":[""]
+            },
+            {
+                "name": "UT Banca Empresa",
+                "code_words": ["Banca Empresa"],
+                "phrases":[""]
+            },
+            {
+                "name": "UT Riesgo",
+                "code_words": ["riesgo"],
+                "phrases":[""]
+            }
+        ]
+    }
+}

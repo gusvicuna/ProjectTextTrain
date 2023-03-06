@@ -274,12 +274,12 @@ database = {
         {
             "code_words":
             [
-                ""
+                "entrega", "guía", "asiste", "aconseja",
+                "orienta", "ofrece", "sugiere", "direcciona"
             ],
             "phrases":
             [
-                "entrega", "guía", "asiste", "aconseja",
-                "orienta", "ofrece", "sugiere", "direcciona"
+                "conocimiento", "información"
             ]
         },
         "SABE SOBRE TERCEROS":
@@ -352,7 +352,7 @@ database = {
             "phrases":
             [
                 "atento", "cordial", "empático", "gentil",
-                "amable", "paciente", "positivo", "animado",
+                "amable", "amabilidad", "paciente", "positivo", "animado",
                 "respetuoso", "cortés", "dispuesto", "simpático",
                 "dulce", "educado", "amoroso", "servicial", "deferente",
                 "con buena voluntad",
@@ -388,7 +388,7 @@ database = {
                 "me hicieron un regalo", "frente a una urgencia ahÍ estÁn",
                 "son considerados", "me defienden", "le importan mis asuntos",
                 "sin peros", "me comprenden", "son mis amigos",
-                "me hacen sentir cómodo", "se la juegan",
+                "me hacen sentir cómodo", "se la juegan", "preocupacion"
             ]
         },
         "CONTINUIDAD DEL PERSONAL":
@@ -635,7 +635,8 @@ database = {
             ],
             "phrases":
             [
-                "asumen", "con el trabajo realizado", "responsable"
+                "asumen", "con el trabajo realizado", "responsable",
+                "responsabilidad"
             ]
         },
         "LEALTAD":

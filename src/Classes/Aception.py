@@ -1,29 +1,19 @@
 class Aception:
 
-    text = ""
-    words = []
-    characters = []
-    wordCount = 0
-    charCount = 0
-
-    def __init__(self, text, driver, ut) -> None:
+    def __init__(self, text=str, driver=str, component=str) -> None:
         self.text = text
-        self.words = self.SplitIntoWords()
-        self.characters = self.SplitIntoCharacters()
-        self.wordCount = len(self.words)
-        self.charCount = len(self.characters)
         self.driver = driver
-        self.ut = ut
+        self.component = component
 
     def __str__(self) -> str:
         return f"{self.text}"
 
-    def SplitIntoWords(self):
+    def Words(self):
         return self.text.split(" ")
 
-    def SplitIntoCharacters(self):
-        return [*self.text]
+    def Characters(self):
+        return list(str(self.text))
 
     def CountCharactersWithoutSpaces(self) -> int:
-        splited_text = [i for i in self.characters if i != " "]
+        splited_text = [i for i in self.Characters() if i != " "]
         return len(splited_text)

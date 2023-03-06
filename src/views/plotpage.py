@@ -21,19 +21,20 @@ class PlotPage(Page):
             width=RESULTSFRAMEWIDTH)
         self.results_frame.pack(side="top")
 
-    def ShowResults(self, listOfTrainTextsMatch):
         self.plot_result_frame = tk.Frame(master=self.results_frame)
         self.plot_result_frame.pack(side="left", fill="y")
 
         self.aceptions_result_frame = tk.Frame(master=self.results_frame)
         self.aceptions_result_frame.pack(side="left", fill="y")
 
-        self.ShowAceptionsInOrder(listOfTrainTextsMatch=listOfTrainTextsMatch)
+    def ShowResults(self, listOfTrainTextsMatch):
+
+        self.ShowAceptionsListed(listOfTrainTextsMatch=listOfTrainTextsMatch)
         PlotMatchTrain(
             listOfTrainTextMatch=listOfTrainTextsMatch,
             frame=self.plot_result_frame)
 
-    def ShowAceptionsInOrder(self, listOfTrainTextsMatch):
+    def ShowAceptionsListed(self, listOfTrainTextsMatch):
         i = 0
         while i < self.limit:
             aception_result_frame = tk.Frame(
@@ -43,7 +44,7 @@ class PlotPage(Page):
 
             aception_label = tk.Label(
                 master=aception_result_frame,
-                text=f"{i+1}. {listOfTrainTextsMatch[i].movingAception}")
+                text=f"{i+1}. {listOfTrainTextsMatch[i].aception}")
             aception_label.pack()
 
             has_100_percent_word = False
